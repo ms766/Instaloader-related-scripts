@@ -6,7 +6,7 @@ The following set of bash scripts handle the general saving of Instagram data lo
 ---
 #### Note the following will only work if python and bash are already installed on a given system. And you don't need these scripts to take advantage of the instaloader lib. Read more @ https://instaloader.github.io/
 ---
-**startpoint**
+**startpoint** <br>
 run setup.sh
 
 ### script details & commands
