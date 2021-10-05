@@ -7,12 +7,6 @@ The following set of bash scripts handle the general saving of Instagram data lo
 #### Note the following will only work if python and bash are already installed on a given system. And you don't need these scripts to take advantage of the instaloader lib. Read more @ https://instaloader.github.io/
 ---
 ### script details
-
-**setup** <br>
-1. cd's into root and seeks the following directories "Picture/0gram", if not present then its creates them. <br>
-2. Installs all required packages if any are missing. <br>
-3. creates if missing or appends to .bashrc the following commands. <br>
-
 ---
 gram = runs main.sh <br>
 gram -r = runs rerun.sh<br>
@@ -23,6 +17,10 @@ gram -reset = reset download states for rerun scripts<br>
 gram -trash = runs trash.sh
 
 ---
+**setup** -->
+1. cd's into root and seeks the following directories "Picture/0gram", if not present then its creates them. <br>
+2. Installs all required packages if any are missing. <br>
+3. creates if missing or appends to .bashrc the following commands. <br>
 
 **main.sh** --> takes command line args in the form of username or the keyword "login" and then the username. Note that a given user name has to be written to a ".env" file in order to login to your account before hand. Downloads and sorts files based on if they are jpg or mp4 into 0clips or 0pictues sub-directories while providing file backups of size 0 in the root of profile directory being downloading to avoid duplicate downloads. Additionally if a profile if private then the given directory will be move out into “Pictures/1gram_private” and will require you to be logged into to download such data. 
 
